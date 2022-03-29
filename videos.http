@@ -1,0 +1,28 @@
+@api = http://localhost:4000
+
+###
+GET {{api}}/videos
+
+###
+GET  {{api}}/videos/62391bd0e59a1cc663b653d2
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=wOLo-B7mrZM",
+    "title": "MERN STACK & Typescript (Mongodb, Express, React, Node con Typescript) - #2 Frontend",
+    "description": "amazin video"
+}
+
+###
+DELETE {{api}}/videos/6237730cf5c766331d00186f
+
+###
+PUT {{api}}/videos/623f2518cac8a548c1fa019e
+Content-Type: application/json
+
+{
+    "description": "video nenuco"
+}
